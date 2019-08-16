@@ -1,3 +1,0 @@
-## Eat Wisdom Today
-
-Comming Soon...

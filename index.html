@@ -1,0 +1,207 @@
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>Eat Wisdom</title>
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+<link href="public/js/plugins/nucleo/css/nucleo.css" rel="stylesheet">
+<link href="public/js/plugins/@fortawesome/fontawesome-free/css/all.min.css" rel="stylesheet">
+<!--  CSS -->
+<link type="text/css" href="public/css/argon-dashboard.css?v=1.1.0" rel="stylesheet">
+
+</head>
+
+<body style="font-family:'Lucida Grande'!important;">
+  <!--   Core   -->
+<script   src="https://code.jquery.com/jquery-3.4.1.min.js"   integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="   crossorigin="anonymous"></script>
+  <script src="public/js/plugins/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  <!--   Optional JS   -->
+  <!--   Argon JS   -->
+  <script src="public/js/argon-dashboard.min.js?v=1.1.0"></script>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-145852310-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-145852310-1');
+</script>
+
+  <script type="text/javascript">
+
+var sceneIndex=0;
+
+function incrementSceneIndex(){
+		sceneIndex++;
+		Session.set('sceneIndex',sceneIndex);
+}
+
+$(document).ready(function() {
+	sceneIndex=0;
+    $('#marketing').hide();
+    $('#sales').hide();
+    $('#investment').hide();
+  $("#start").click(function(){
+    	if(sceneIndex==0){
+    			$("#story").fadeTo(500,0.30, function() {
+    		      $("#story").attr("src","public/img/firstprinciples/2.png");
+    		  }).fadeTo(2900,1);
+    			$('#start_button_text').text("Next");
+    			sceneIndex++;
+
+    	}else if(sceneIndex==1){
+    			$("#story").fadeTo(500,0.30, function() {
+    		      $("#story").attr("src","public/img/firstprinciples/3.png");
+    		  }).fadeTo(2900,1);
+    			$('#start_button_text').text("Let's break it");
+    			sceneIndex++;
+    	} else if(sceneIndex==2){
+    			$("#story").fadeTo(500,0.30, function() {
+    		      $("#story").attr("src","public/img/firstprinciples/4.png");
+    		  }).fadeTo(2900,1);
+    			$('#start_button_text').text("Product");
+            $('#marketing').show();
+            $('#sales').show();
+            $('#investment').show();
+    	  	sceneIndex++;
+    	} else if(sceneIndex==3){
+    			$("#story").fadeTo(500,0.30, function() {
+    		      $("#story").attr("src","public/img/firstprinciples/5.png");
+    		  }).fadeTo(2900,1);
+    			$('#start_button_text').text("Marketing");
+    			sceneIndex++;
+            $('#marketing').hide();
+    	} else if(sceneIndex==4){
+    			$("#story").fadeTo(500,0.30, function() {
+    		      $("#story").attr("src","public/img/firstprinciples/6.png");
+    		  }).fadeTo(2900,1);
+    			$('#start_button_text').text("Sales");
+            $('#sales').hide();
+    			sceneIndex++;
+    	} else if(sceneIndex==5){
+    			$("#story").fadeTo(500,0.30, function() {
+    		      $("#story").attr("src","public/img/firstprinciples/7.png");
+    		  }).fadeTo(2900,1);
+    			$('#start_button_text').text("Raising Investment");
+    			sceneIndex++;
+            $('#investment').hide();
+    	}  else if(sceneIndex==6){
+    			$("#story").fadeTo(1000,0.30, function() {
+    		      $("#story").attr("src","public/img/firstprinciples/8.png");
+    		  }).fadeTo(1300,1);
+    			$('#start_button_text').text("Next");
+    				sceneIndex++;
+    	} else if(sceneIndex==7){
+    			$("#story").fadeTo(1000,0.30, function() {
+    		      $("#story").attr("src","public/img/firstprinciples/9.png");
+    		  }).fadeTo(1300,1);
+    				$('#start_button_text').text("Signup");
+    				$("#start").attr("href","/");
+    					sceneIndex++;
+    	} else {
+
+    	   window.location="https://eatwisdom.com";
+    	}
+  })
+
+});
+  </script>
+
+  <nav class="navbar navbar-vertical fixed-left navbar-expand-md navbar-light bg-white" id="sidenav-main">
+    <div class="container-fluid">
+      <!-- Toggler -->
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#sidenav-collapse-main" aria-controls="sidenav-main" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <!-- Brand -->
+    <a class="navbar-brand" href="https://eatwisdom.com" style="font-size:1.4em">
+           <img src="public/img/ewlogo.png" class="navbar-brand-img" style="max-height:10rem !important" >
+</a>
+      <!-- User -->
+      <ul class="nav align-items-center d-md-none">
+
+        <li class="nav-item dropdown">
+          <a class="nav-link" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+
+          </a>
+
+        </li>
+      </ul>
+      <!-- Collapse -->
+      <div class="collapse navbar-collapse" id="sidenav-collapse-main">
+        <!-- Collapse header -->
+        <div class="navbar-collapse-header d-md-none">
+          <div class="row">
+
+            <div class="col-6 collapse-close">
+              <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#sidenav-collapse-main" aria-controls="sidenav-main" aria-expanded="false" aria-label="Toggle sidenav">
+                <span></span>
+                <span></span>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Navigation -->
+        <ul class="navbar-nav" style="font-family:'Lucida Grande'!important;">
+<li class="nav-item active">
+  <a class="nav-link " href="https://eatwisdom.com">
+    <i class="fas fa-space-shuttle"></i> Signup
+  </a>
+</li>
+
+
+        </ul>
+
+
+      </div>
+    </div>
+  </nav>
+
+     <div class="main-content" style="height:100%;">
+            <br/>
+     <div class="col-xl-10 mb-5 mb-xl-0" style="margin-left:5%;margin-right:5%;">
+   <div class="row" >
+      <div class="col-md-8" style="padding:0px">
+        <br/>
+          <br/>
+<h4 style="padding:0px !important;color:#000000;font-weight:600;font-size:1.4rem">Thinking in First Principles </h4>
+<p style="font-family:'Open Sans',sans-serif;font-weight:300;font-size:1rem"> Let's learn about thinking in first principles through an interactive story.</p>
+  </div>
+
+   </div>
+   <div class="row">
+<div class="col-md-8" style="padding:0px;">
+  <br/>
+    <img id="story" src="public/img/firstprinciples/1.png" style="width:100%"/>
+    </div>
+     </div>
+
+     <div class="row">
+  <div class="col-md-8" style="padding:0px;">
+    <br/>
+     <button class="btn btn-icon btn-3 btn-secondary" type="button" id="start" style="font-size:14px;padding:10px !important;background-color:black;color:white" >
+                     <span class="btn-inner--text" id="start_button_text" >Let's Start</span>
+                   </button>
+     <button class="btn btn-icon btn-3 btn-secondary" id="marketing" type="button"  style="font-size:14px;padding:10px !important;background-color:#9E9E9E;border:none;color:white" data-toggle="modal" data-target="#framework-modal">
+                     <span class="btn-inner--text"  >Marketing</span>
+                   </button>
+
+     <button class="btn btn-icon btn-3 btn-secondary" type="button"  id="sales"  style="font-size:14px;padding:10px !important;background-color:black;background-color:#9E9E9E;border:none;color:white" data-toggle="modal" data-target="#framework-modal">
+                     <span class="btn-inner--text"  >Sales</span>
+                   </button>
+
+     <button class="btn btn-icon btn-3 btn-secondary" type="button" id="investment"  style="font-size:14px;padding:10px !important;background-color:black;background-color:#9E9E9E;border:none;color:white" data-toggle="modal" data-target="#framework-modal">
+                     <span class="btn-inner--text"  >Raising Investment</span>
+                   </button>
+      </div>
+       </div>
+
+ </div>
+ </div>
+
+
+</body>
+
+</html>
